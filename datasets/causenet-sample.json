@@ -1,0 +1,2642 @@
+[
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "disease"
+            },
+            "effect": {
+                "concept": "death"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "accident"
+            },
+            "effect": {
+                "concept": "injury"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "smoking"
+            },
+            "effect": {
+                "concept": "lung_cancer"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "stress"
+            },
+            "effect": {
+                "concept": "illness"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "depression"
+            },
+            "effect": {
+                "concept": "suicide"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "drought"
+            },
+            "effect": {
+                "concept": "famine"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "diarrhea"
+            },
+            "effect": {
+                "concept": "dehydration"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "bacteria"
+            },
+            "effect": {
+                "concept": "infection"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "endometriosis"
+            },
+            "effect": {
+                "concept": "infertility"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "obesity"
+            },
+            "effect": {
+                "concept": "diabetes"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "negligence"
+            },
+            "effect": {
+                "concept": "injuries"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "anxiety"
+            },
+            "effect": {
+                "concept": "insomnia"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "inflammation"
+            },
+            "effect": {
+                "concept": "pain"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "accidents"
+            },
+            "effect": {
+                "concept": "deaths"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "fire"
+            },
+            "effect": {
+                "concept": "damage"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "global_warming"
+            },
+            "effect": {
+                "concept": "climate_change"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "heavy_rains"
+            },
+            "effect": {
+                "concept": "flooding"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "osteoporosis"
+            },
+            "effect": {
+                "concept": "fractures"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "earthquake"
+            },
+            "effect": {
+                "concept": "tsunami"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "condition"
+            },
+            "effect": {
+                "concept": "symptoms"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "vaccines"
+            },
+            "effect": {
+                "concept": "autism"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "asbestos"
+            },
+            "effect": {
+                "concept": "mesothelioma"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "poverty"
+            },
+            "effect": {
+                "concept": "crime"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "hpv"
+            },
+            "effect": {
+                "concept": "cervical_cancer"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "war"
+            },
+            "effect": {
+                "concept": "destruction"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "alcohol"
+            },
+            "effect": {
+                "concept": "problems"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "changes"
+            },
+            "effect": {
+                "concept": "changes"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "surgery"
+            },
+            "effect": {
+                "concept": "complications"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "glaucoma"
+            },
+            "effect": {
+                "concept": "blindness"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "blood_clot"
+            },
+            "effect": {
+                "concept": "stroke"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "natural_selection"
+            },
+            "effect": {
+                "concept": "evolution"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "chemotherapy"
+            },
+            "effect": {
+                "concept": "hair_loss"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "radiation"
+            },
+            "effect": {
+                "concept": "cancer"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "hiv"
+            },
+            "effect": {
+                "concept": "aids"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "viruses"
+            },
+            "effect": {
+                "concept": "diseases"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "drugs"
+            },
+            "effect": {
+                "concept": "side_effects"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "deforestation"
+            },
+            "effect": {
+                "concept": "soil_erosion"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "hard_work"
+            },
+            "effect": {
+                "concept": "success"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "rape"
+            },
+            "effect": {
+                "concept": "pregnancy"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "spinal_cord_injury"
+            },
+            "effect": {
+                "concept": "paralysis"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "anemia"
+            },
+            "effect": {
+                "concept": "fatigue"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "iodine_deficiency"
+            },
+            "effect": {
+                "concept": "goiter"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "sin"
+            },
+            "effect": {
+                "concept": "suffering"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "coronary_artery_disease"
+            },
+            "effect": {
+                "concept": "heart_attack"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "anger"
+            },
+            "effect": {
+                "concept": "violence"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "tension"
+            },
+            "effect": {
+                "concept": "headaches"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "brain_injury"
+            },
+            "effect": {
+                "concept": "cerebral_palsy"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "constipation"
+            },
+            "effect": {
+                "concept": "hemorrhoids"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "diet"
+            },
+            "effect": {
+                "concept": "weight_loss"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "hormonal_changes"
+            },
+            "effect": {
+                "concept": "acne"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "vitamin_d_deficiency"
+            },
+            "effect": {
+                "concept": "rickets"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "influenza"
+            },
+            "effect": {
+                "concept": "pneumonia"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "allergies"
+            },
+            "effect": {
+                "concept": "asthma"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "actions"
+            },
+            "effect": {
+                "concept": "harm"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "blood_clots"
+            },
+            "effect": {
+                "concept": "strokes"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "alzheimer_'s_disease"
+            },
+            "effect": {
+                "concept": "dementia"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "heart_disease"
+            },
+            "effect": {
+                "concept": "disability"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "earthquakes"
+            },
+            "effect": {
+                "concept": "tsunamis"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "insulin_resistance"
+            },
+            "effect": {
+                "concept": "type_2_diabetes"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "pilot_error"
+            },
+            "effect": {
+                "concept": "crash"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "hypothyroidism"
+            },
+            "effect": {
+                "concept": "weight_gain"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "change"
+            },
+            "effect": {
+                "concept": "confusion"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "religion"
+            },
+            "effect": {
+                "concept": "wars"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "aspartame"
+            },
+            "effect": {
+                "concept": "seizures"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "noise"
+            },
+            "effect": {
+                "concept": "hearing_loss"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "mold"
+            },
+            "effect": {
+                "concept": "health_problems"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "sulfur_dioxide"
+            },
+            "effect": {
+                "concept": "acid_rain"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "stock_market_crash"
+            },
+            "effect": {
+                "concept": "great_depression"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "drug"
+            },
+            "effect": {
+                "concept": "birth_defects"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "friction"
+            },
+            "effect": {
+                "concept": "blisters"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "sun_exposure"
+            },
+            "effect": {
+                "concept": "skin_cancer"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "virus"
+            },
+            "effect": {
+                "concept": "fever"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "vitamin_a_deficiency"
+            },
+            "effect": {
+                "concept": "night_blindness"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "increase"
+            },
+            "effect": {
+                "concept": "increase"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "dry_mouth"
+            },
+            "effect": {
+                "concept": "bad_breath"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "plantar_fasciitis"
+            },
+            "effect": {
+                "concept": "heel_pain"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "greenhouse_gases"
+            },
+            "effect": {
+                "concept": "warming"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "failure"
+            },
+            "effect": {
+                "concept": "loss"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "free_radicals"
+            },
+            "effect": {
+                "concept": "oxidative_stress"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "osteoarthritis"
+            },
+            "effect": {
+                "concept": "stiffness"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "vioxx"
+            },
+            "effect": {
+                "concept": "heart_attacks"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "events"
+            },
+            "effect": {
+                "concept": "events"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "gum_disease"
+            },
+            "effect": {
+                "concept": "tooth_loss"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "high_blood_pressure"
+            },
+            "effect": {
+                "concept": "kidney_failure"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "cataracts"
+            },
+            "effect": {
+                "concept": "vision_loss"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "weather"
+            },
+            "effect": {
+                "concept": "delays"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "financial_crisis"
+            },
+            "effect": {
+                "concept": "recession"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "cigarette_smoking"
+            },
+            "effect": {
+                "concept": "emphysema"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "fall"
+            },
+            "effect": {
+                "concept": "fracture"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "infidelity"
+            },
+            "effect": {
+                "concept": "divorce"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "poor_posture"
+            },
+            "effect": {
+                "concept": "back_pain"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "apoptosis"
+            },
+            "effect": {
+                "concept": "cell_death"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "fraud"
+            },
+            "effect": {
+                "concept": "losses"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "air_pollution"
+            },
+            "effect": {
+                "concept": "premature_deaths"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "vitamin_c_deficiency"
+            },
+            "effect": {
+                "concept": "scurvy"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "competition"
+            },
+            "effect": {
+                "concept": "lower_prices"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "storms"
+            },
+            "effect": {
+                "concept": "floods"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "iron_deficiency"
+            },
+            "effect": {
+                "concept": "anaemia"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "faith"
+            },
+            "effect": {
+                "concept": "salvation"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "frustration"
+            },
+            "effect": {
+                "concept": "aggression"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "error"
+            },
+            "effect": {
+                "concept": "error"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "benzene"
+            },
+            "effect": {
+                "concept": "leukemia"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "hurricane_katrina"
+            },
+            "effect": {
+                "concept": "devastation"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "low_blood_pressure"
+            },
+            "effect": {
+                "concept": "dizziness"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "hypertension"
+            },
+            "effect": {
+                "concept": "kidney_disease"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "cardiovascular_disease"
+            },
+            "effect": {
+                "concept": "mortality"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "chlamydia"
+            },
+            "effect": {
+                "concept": "pelvic_inflammatory_disease"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "diversity"
+            },
+            "effect": {
+                "concept": "conflict"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "ventricular_fibrillation"
+            },
+            "effect": {
+                "concept": "cardiac_arrest"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "oxygen_deprivation"
+            },
+            "effect": {
+                "concept": "brain_damage"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "hrt"
+            },
+            "effect": {
+                "concept": "breast_cancer"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "medical_malpractice"
+            },
+            "effect": {
+                "concept": "wrongful_death"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "mutations"
+            },
+            "effect": {
+                "concept": "cancers"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "masturbation"
+            },
+            "effect": {
+                "concept": "insanity"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "trauma"
+            },
+            "effect": {
+                "concept": "ptsd"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "asbestos_exposure"
+            },
+            "effect": {
+                "concept": "mesothelioma_cancer"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "mental_illness"
+            },
+            "effect": {
+                "concept": "homelessness"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "corrosion"
+            },
+            "effect": {
+                "concept": "leaks"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "lightning"
+            },
+            "effect": {
+                "concept": "fires"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "sun_damage"
+            },
+            "effect": {
+                "concept": "wrinkles"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "insulin"
+            },
+            "effect": {
+                "concept": "hypoglycemia"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "angina"
+            },
+            "effect": {
+                "concept": "chest_pain"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "price_controls"
+            },
+            "effect": {
+                "concept": "shortages"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "gas_leak"
+            },
+            "effect": {
+                "concept": "explosion"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "fibroids"
+            },
+            "effect": {
+                "concept": "heavy_bleeding"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "a"
+            },
+            "effect": {
+                "concept": "b"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "vaginal_dryness"
+            },
+            "effect": {
+                "concept": "painful_intercourse"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "delay"
+            },
+            "effect": {
+                "concept": "prejudice"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "human_immunodeficiency_virus"
+            },
+            "effect": {
+                "concept": "acquired_immunodeficiency_syndrome"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "atherosclerosis"
+            },
+            "effect": {
+                "concept": "coronary_heart_disease"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "gallstones"
+            },
+            "effect": {
+                "concept": "pancreatitis"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "strabismus"
+            },
+            "effect": {
+                "concept": "amblyopia"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "x"
+            },
+            "effect": {
+                "concept": "y"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "toxins"
+            },
+            "effect": {
+                "concept": "illnesses"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "allergic_reaction"
+            },
+            "effect": {
+                "concept": "hives"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "psychological_factors"
+            },
+            "effect": {
+                "concept": "erectile_dysfunction"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "exposure_to_asbestos"
+            },
+            "effect": {
+                "concept": "asbestosis"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "antibiotics"
+            },
+            "effect": {
+                "concept": "yeast_infection"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "moisture"
+            },
+            "effect": {
+                "concept": "mold_growth"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "hsv-2"
+            },
+            "effect": {
+                "concept": "genital_herpes"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "alcohol_abuse"
+            },
+            "effect": {
+                "concept": "cirrhosis"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "uncertainty"
+            },
+            "effect": {
+                "concept": "fear"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "acid_reflux"
+            },
+            "effect": {
+                "concept": "heartburn"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "herpes_simplex_virus"
+            },
+            "effect": {
+                "concept": "cold_sores"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "arrest"
+            },
+            "effect": {
+                "concept": "conviction"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "blood_loss"
+            },
+            "effect": {
+                "concept": "shock"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "fungi"
+            },
+            "effect": {
+                "concept": "infections"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "dust"
+            },
+            "effect": {
+                "concept": "respiratory_problems"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "antihistamines"
+            },
+            "effect": {
+                "concept": "drowsiness"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "menopause"
+            },
+            "effect": {
+                "concept": "hot_flashes"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "acetaminophen"
+            },
+            "effect": {
+                "concept": "liver_failure"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "hepatitis_c"
+            },
+            "effect": {
+                "concept": "liver_disease"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "incidents"
+            },
+            "effect": {
+                "concept": "property_damage"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "plaque"
+            },
+            "effect": {
+                "concept": "gingivitis"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "arthritis"
+            },
+            "effect": {
+                "concept": "joint_pain"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "nsaids"
+            },
+            "effect": {
+                "concept": "ulcers"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "ignorance"
+            },
+            "effect": {
+                "concept": "discrimination"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "free_radical_damage"
+            },
+            "effect": {
+                "concept": "aging"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "cannabis"
+            },
+            "effect": {
+                "concept": "schizophrenia"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "unemployment"
+            },
+            "effect": {
+                "concept": "foreclosures"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "nerve_damage"
+            },
+            "effect": {
+                "concept": "numbness"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "uric_acid"
+            },
+            "effect": {
+                "concept": "gout"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "storm"
+            },
+            "effect": {
+                "concept": "power_outages"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "radon"
+            },
+            "effect": {
+                "concept": "lung_cancer_deaths"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "conditions"
+            },
+            "effect": {
+                "concept": "problem"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "vitamin_b12_deficiency"
+            },
+            "effect": {
+                "concept": "megaloblastic_anemia"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "thoughts"
+            },
+            "effect": {
+                "concept": "feelings"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "action"
+            },
+            "effect": {
+                "concept": "reaction"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "torrential_rains"
+            },
+            "effect": {
+                "concept": "landslides"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "habitat_loss"
+            },
+            "effect": {
+                "concept": "decline"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "increase_in_the_money_supply"
+            },
+            "effect": {
+                "concept": "inflation"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "hepatitis_b"
+            },
+            "effect": {
+                "concept": "liver_cancer"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "thrombocytopenia"
+            },
+            "effect": {
+                "concept": "bleeding"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "stimulus"
+            },
+            "effect": {
+                "concept": "response"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "lack_of_sleep"
+            },
+            "effect": {
+                "concept": "irritability"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "niacin_deficiency"
+            },
+            "effect": {
+                "concept": "pellagra"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "down_syndrome"
+            },
+            "effect": {
+                "concept": "mental_retardation"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "malaria"
+            },
+            "effect": {
+                "concept": "morbidity"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "graves_'_disease"
+            },
+            "effect": {
+                "concept": "hyperthyroidism"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "sleep_apnea"
+            },
+            "effect": {
+                "concept": "daytime_sleepiness"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "breach"
+            },
+            "effect": {
+                "concept": "damages"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "helicobacter_pylori"
+            },
+            "effect": {
+                "concept": "stomach_ulcers"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "population_growth"
+            },
+            "effect": {
+                "concept": "environmental_degradation"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "cars"
+            },
+            "effect": {
+                "concept": "pollution"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "heavy_rain"
+            },
+            "effect": {
+                "concept": "mudslides"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "measles"
+            },
+            "effect": {
+                "concept": "encephalitis"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "yeast"
+            },
+            "effect": {
+                "concept": "fermentation"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "human_error"
+            },
+            "effect": {
+                "concept": "data_loss"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "medical_bills"
+            },
+            "effect": {
+                "concept": "bankruptcy"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "abuse"
+            },
+            "effect": {
+                "concept": "addiction"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "human_papillomavirus"
+            },
+            "effect": {
+                "concept": "genital_warts"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "sugar"
+            },
+            "effect": {
+                "concept": "tooth_decay"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "dilated_cardiomyopathy"
+            },
+            "effect": {
+                "concept": "heart_failure"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "human_activities"
+            },
+            "effect": {
+                "concept": "global_climate_change"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "tax_cuts"
+            },
+            "effect": {
+                "concept": "deficits"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "wind"
+            },
+            "effect": {
+                "concept": "waves"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "maladministration"
+            },
+            "effect": {
+                "concept": "injustice"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "congestion"
+            },
+            "effect": {
+                "concept": "packet_loss"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "ect"
+            },
+            "effect": {
+                "concept": "memory_loss"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "habitat_destruction"
+            },
+            "effect": {
+                "concept": "extinction"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "power"
+            },
+            "effect": {
+                "concept": "corruption"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "rain"
+            },
+            "effect": {
+                "concept": "flood"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "pollen"
+            },
+            "effect": {
+                "concept": "hay_fever"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "differences"
+            },
+            "effect": {
+                "concept": "conflicts"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "car_accidents"
+            },
+            "effect": {
+                "concept": "fatalities"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "periodontal_disease"
+            },
+            "effect": {
+                "concept": "bone_loss"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "inexperience"
+            },
+            "effect": {
+                "concept": "mistakes"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "herniated_disc"
+            },
+            "effect": {
+                "concept": "sciatica"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "attacks"
+            },
+            "effect": {
+                "concept": "casualties"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "car_accident"
+            },
+            "effect": {
+                "concept": "serious_injury"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "jealousy"
+            },
+            "effect": {
+                "concept": "murder"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "accutane"
+            },
+            "effect": {
+                "concept": "inflammatory_bowel_disease"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "false_confessions"
+            },
+            "effect": {
+                "concept": "wrongful_convictions"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "wave_action"
+            },
+            "effect": {
+                "concept": "erosion"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "incident"
+            },
+            "effect": {
+                "concept": "loss_of_life"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "overuse"
+            },
+            "effect": {
+                "concept": "tendonitis"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "vomiting"
+            },
+            "effect": {
+                "concept": "severe_dehydration"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "whiplash"
+            },
+            "effect": {
+                "concept": "neck_pain"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "gonorrhea"
+            },
+            "effect": {
+                "concept": "pid"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "hydraulic_fracturing"
+            },
+            "effect": {
+                "concept": "groundwater_contamination"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "relationship"
+            },
+            "effect": {
+                "concept": "marriage"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "monetary_inflation"
+            },
+            "effect": {
+                "concept": "price_inflation"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "abortion"
+            },
+            "effect": {
+                "concept": "mental_health_problems"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "deregulation"
+            },
+            "effect": {
+                "concept": "crisis"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "rosacea"
+            },
+            "effect": {
+                "concept": "redness"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "beliefs"
+            },
+            "effect": {
+                "concept": "emotions"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "expectations"
+            },
+            "effect": {
+                "concept": "disappointment"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "negotiations"
+            },
+            "effect": {
+                "concept": "agreement"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "dryness"
+            },
+            "effect": {
+                "concept": "irritation"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "godly_sorrow"
+            },
+            "effect": {
+                "concept": "repentance"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "mutation"
+            },
+            "effect": {
+                "concept": "resistance"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "actos"
+            },
+            "effect": {
+                "concept": "bladder_cancer"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "evaporation"
+            },
+            "effect": {
+                "concept": "water_loss"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "uvb_rays"
+            },
+            "effect": {
+                "concept": "sunburn"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "rising_temperatures"
+            },
+            "effect": {
+                "concept": "droughts"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "medications"
+            },
+            "effect": {
+                "concept": "delirium"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "treatment"
+            },
+            "effect": {
+                "concept": "improvement"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "virtue"
+            },
+            "effect": {
+                "concept": "happiness"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "rotavirus"
+            },
+            "effect": {
+                "concept": "severe_diarrhea"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "cultural_differences"
+            },
+            "effect": {
+                "concept": "misunderstandings"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "oxidation"
+            },
+            "effect": {
+                "concept": "rancidity"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "boom"
+            },
+            "effect": {
+                "concept": "bust"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "smokeless_tobacco"
+            },
+            "effect": {
+                "concept": "oral_cancer"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "justification"
+            },
+            "effect": {
+                "concept": "sanctification"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "vaccine"
+            },
+            "effect": {
+                "concept": "adverse_events"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "food"
+            },
+            "effect": {
+                "concept": "allergy"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "sleep_deprivation"
+            },
+            "effect": {
+                "concept": "hallucinations"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "data_breaches"
+            },
+            "effect": {
+                "concept": "identity_theft"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "dumped_imports"
+            },
+            "effect": {
+                "concept": "material_injury"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "overgrazing"
+            },
+            "effect": {
+                "concept": "desertification"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "cell_phone_use"
+            },
+            "effect": {
+                "concept": "brain_cancer"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "god"
+            },
+            "effect": {
+                "concept": "evil"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "medical_errors"
+            },
+            "effect": {
+                "concept": "98,000_deaths"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "salt"
+            },
+            "effect": {
+                "concept": "water_retention"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "dvt"
+            },
+            "effect": {
+                "concept": "pulmonary_embolism"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "auto_accidents"
+            },
+            "effect": {
+                "concept": "serious_injuries"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "zinc_deficiency"
+            },
+            "effect": {
+                "concept": "growth_retardation"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "spiritual_death"
+            },
+            "effect": {
+                "concept": "physical_death"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "medical_negligence"
+            },
+            "effect": {
+                "concept": "birth_injury"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "malnutrition"
+            },
+            "effect": {
+                "concept": "sickness"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "exposure"
+            },
+            "effect": {
+                "concept": "effects"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "hyperventilation"
+            },
+            "effect": {
+                "concept": "respiratory_alkalosis"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "chronic_inflammation"
+            },
+            "effect": {
+                "concept": "tissue_damage"
+            }
+        }
+    },
+    {
+        "causal_relation": {
+            "cause": {
+                "concept": "chromosomal_abnormalities"
+            },
+            "effect": {
+                "concept": "miscarriage"
+            }
+        }
+    }
+]
