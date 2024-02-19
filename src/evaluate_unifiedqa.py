@@ -11,7 +11,7 @@ from functools import partial
 from datasets import Dataset
 from torch.utils.data import DataLoader
 from transformers import T5Tokenizer, T5ForConditionalGeneration, set_seed
-from utils.utils_agent import compute_metrics
+from utils.agent_utils import compute_metrics
 
 
 DEVICE = torch.device('cuda:0') if torch.cuda.is_available() else torch.device('cpu')

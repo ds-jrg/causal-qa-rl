@@ -2,6 +2,7 @@
 
 mkdir data
 mkdir data/models
+mkdir data/paths
 wget https://nlp.stanford.edu/data/glove.6B.zip
 wget https://groups.uni-paderborn.de/wdqa/causenet/causality-graphs/causenet-precision.jsonl.bz2
 wget https://groups.uni-paderborn.de/wdqa/causenet/causality-graphs/causenet-sample.json
@@ -12,3 +13,4 @@ tar xf models.tar.gz
 
 cd src
 python setup.py develop
+python -m nltk.downloader stopwords punkt wordnet omw-1.4

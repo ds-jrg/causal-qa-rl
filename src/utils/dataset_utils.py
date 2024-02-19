@@ -3,16 +3,11 @@ from itertools import chain
 import json
 import csv
 from typing import Optional
-import nltk
 import unicodedata
 import numpy as np
 
 from nltk import word_tokenize
 from nltk.corpus import wordnet
-
-
-nltk.download('wordnet')
-nltk.download('omw-1.4')
 
 
 @dataclass
@@ -114,7 +109,6 @@ def get_questions_msmarco(kg, path, valid=False):
 
 def get_questions_csv(kg, path):
     train = []
-    valid = []
     embedding_provider = kg.embedding_provider
     with open(path, newline='') as csvfile:
         reader = csv.reader(csvfile, delimiter=',')
@@ -123,8 +117,7 @@ def get_questions_csv(kg, path):
             cause = row[0].replace('_', ' ')
             effect = row[1].replace('_', ' ')
             train.append(Question(cause, cause, effect, embedding_provider.question_embeddings(cause), True, idx))
-            valid.append(Question(cause, cause, effect, embedding_provider.question_embeddings(cause), True, idx))
-    return train, valid
+    return train
 
 
 def get_questions_sem_eval(kg, path, valid=False):

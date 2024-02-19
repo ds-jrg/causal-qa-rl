@@ -1,5 +1,4 @@
 import numpy as np
-import pickle
 import zipfile
 import torch
 
@@ -10,11 +9,9 @@ from utils import graph_utils
 
 class EmbeddingProvider:
 
-    def __init__(self, num_dimensions: int = 100,
-                 num_entity_dimensions: int = 100,
+    def __init__(self, num_entity_dimensions: int = 100,
                  num_relation_dimensions: int = 100,
                  num_question_dimensions: int = 100):
-        self.num_dimensions = num_dimensions
         self.num_entity_dimensions = num_entity_dimensions
         self.num_relation_dimensions = num_relation_dimensions
         self.num_question_dimensions = num_question_dimensions
@@ -35,8 +32,9 @@ class EmbeddingProvider:
 class DebugEmbeddingProvider(EmbeddingProvider):
 
     def __init__(self, num_dimensions: int = 300):
-        super().__init__(num_dimensions=num_dimensions)
+        super().__init__()
         self.embeddings = {}
+        self.num_dimensions = num_dimensions
         self.num_entity_dimensions = num_dimensions
         self.num_relation_dimensions = num_dimensions
         self.num_question_dimensions = num_dimensions
@@ -53,31 +51,25 @@ class DebugEmbeddingProvider(EmbeddingProvider):
 
 class GloveEmbeddingProvider(EmbeddingProvider):
 
-    def __init__(self, path: str, num_dimensions: int = 300, pickle: bool = False):
-        super().__init__(num_dimensions=num_dimensions)
-        self.pickle = pickle
-        self.embeddings = self._load_embeddings(path)
+    def __init__(self, path: str, num_dimensions: int = 300):
+        super().__init__()
+        self.num_dimensions = num_dimensions
         self.num_entity_dimensions = num_dimensions
         self.num_relation_dimensions = num_dimensions
         self.num_question_dimensions = num_dimensions
+        self.embeddings = self._load_embeddings(path)
 
     def _load_embeddings(self, path: str) -> Dict[str, List[float]]:
-        if self.pickle:
-            with open(path, 'rb') as emb_file:
-                embeddings = pickle.load(emb_file)
-        else:
-            with zipfile.ZipFile(path) as z:
-                file_ = [file_name for file_name in z.namelist() if str(self.num_dimensions) in file_name]
-                if len(file_) != 1:
-                    raise ValueError(f'Can\'t find glove embeddings for {self.num_dimensions}')
+        with zipfile.ZipFile(path) as z:
+            file_ = [file_name for file_name in z.namelist() if str(self.num_dimensions) in file_name]
+            if len(file_) != 1:
+                raise ValueError(f'Can\'t find glove embeddings for {self.num_dimensions}')
 
-                with z.open(file_[0], 'r') as f:
-                    embeddings = {}
-                    for line in f:
-                        line = line.decode('utf-8').strip().split(' ')
-                        embeddings[line[0]] = [float(value) for value in line[1:]]
-        # with open('glove_embeddings.pickle', 'wb') as file_:
-        #    pickle.dump(embeddings, file_)
+            with z.open(file_[0], 'r') as f:
+                embeddings = {}
+                for line in f:
+                    line = line.decode('utf-8').strip().split(' ')
+                    embeddings[line[0]] = [float(value) for value in line[1:]]
         return embeddings
 
     def entity_embeddings(self, entities: List[str]):
@@ -99,26 +91,22 @@ class GloveEmbeddingProvider(EmbeddingProvider):
         return torch.from_numpy(emb).float()
 
 
-class BertEmbeddingProvider(EmbeddingProvider):
+class BERTEmbeddingProvider(EmbeddingProvider):
 
     def __init__(self, entity_embeddings_path: str,
                  relation_embeddings_path: str,
                  question_embeddings_path_train: str,
-                 question_embeddings_path_valid: str,
-                 num_dimensions: int = 768):
-        super().__init__(num_dimensions=num_dimensions)
+                 question_embeddings_path_valid: str):
+        super().__init__()
 
-        with open(entity_embeddings_path, 'rb') as f:
-            self.entity_embeddings_ = pickle.load(f)
+        check_torch = lambda t: t if isinstance(t, torch.Tensor) else torch.tensor(t).float()
+        transform = lambda d: {a: check_torch(b) for a, b in d.items()}
 
-        with open(relation_embeddings_path, 'rb') as f:
-            self.relation_embeddings_ = pickle.load(f)
-
-        with open(question_embeddings_path_train, 'rb') as f:
-            train_embeddings = pickle.load(f)
-
-        with open(question_embeddings_path_valid, 'rb') as f:
-            valid_embeddings = pickle.load(f)
+        self.entity_embeddings_ = torch.load(entity_embeddings_path, map_location=torch.device('cpu'))
+        self.entity_embeddings_ = check_torch(self.entity_embeddings_)
+        self.relation_embeddings_ = transform(torch.load(relation_embeddings_path, map_location=torch.device('cpu')))
+        train_embeddings = transform(torch.load(question_embeddings_path_train, map_location=torch.device('cpu')))
+        valid_embeddings = transform(torch.load(question_embeddings_path_valid, map_location=torch.device('cpu')))
 
         self.question_embeddings_ = {**train_embeddings, **valid_embeddings}
         self.num_entity_dimensions = self.entity_embeddings_.shape[-1]

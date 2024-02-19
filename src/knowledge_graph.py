@@ -12,7 +12,6 @@ class KnowledgeGraph:
 
     def __init__(self, embedding_provider: EmbeddingProvider,
                  triples: Union[List[Tuple[str, str]], str],
-                 entity_embedding_path: str = None, relation_embedding_path: str = None,
                  use_inverse: bool = False):
 
         self.embedding_provider = embedding_provider
@@ -29,21 +28,8 @@ class KnowledgeGraph:
         )
         self.stop_action = len(self.entity_index) - 1
 
-        if entity_embedding_path is not None:
-            with open(entity_embedding_path, 'rb') as entity_file:
-                self.entity_embeddings = pickle.load(entity_file)
-        else:
-            self.entity_embeddings = embedding_provider.entity_embeddings(list(self.entity_index.values()))
-            # with open('entity_embeddings_causenet_precision_glove.pkl', 'wb') as file_:
-            #    pickle.dump(self.entity_embeddings, file_)
-
-        if relation_embedding_path is not None:
-            with open(relation_embedding_path, 'rb') as relation_file:
-                self.relation_embeddings = pickle.load(relation_file)
-        else:
-            self.relation_embeddings = embedding_provider.relation_embeddings(graph_sources)
-            # with open('relation_embeddings_causenet_precision_glove.pkl', 'wb') as file_:
-            #    pickle.dump(self.relation_embeddings, file_)
+        self.entity_embeddings = embedding_provider.entity_embeddings(list(self.entity_index.values()))
+        self.relation_embeddings = embedding_provider.relation_embeddings(graph_sources)
 
     def id_to_entity(self, entity_id: int) -> str:
         return self.entity_index[entity_id]
@@ -71,13 +57,12 @@ class KnowledgeGraph:
 
     def get_embeddings_relation(self, current_node: int, nbs_ids: List[int]) -> np.array:
         relation_embs = [self.relation_embeddings[(current_node, nbs_id)] for nbs_id in nbs_ids]
-        return relation_embs
+        return torch.tensor(relation_embs)
 
     def get_embeddings_relation_object(self, current_node: int, nbs_ids: List[int]) -> np.array:
         nbs_embs = self.entity_embeddings[nbs_ids]
         relation_embs = torch.stack([self.relation_embeddings[(current_node, nbs_id)] for nbs_id in nbs_ids])
         embs = torch.cat([relation_embs, nbs_embs], axis=1)
-        # embs = (nbs_embs + np.array(relation_embs)) / 2
         return embs
 
     @property

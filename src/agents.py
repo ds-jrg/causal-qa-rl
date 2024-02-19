@@ -15,6 +15,7 @@ def init_weights(module):
                 nn.init.orthogonal_(param)
 
 
+# TODO: Merge into the other classes, not needed anymore after the changes
 class LSTMLayer(nn.Module):
     def __init__(self, input_dim: int = 600, hidden_dim_lstm: int = 1024):
         super().__init__()
@@ -25,14 +26,13 @@ class LSTMLayer(nn.Module):
     def weight_init(self):
         self.apply(init_weights)
 
-    def get_initial_state(self, device):
-        return torch.zeros((1, 1, self.hiddem_dim_lstm), dtype=torch.float32, device=device), \
-               torch.zeros((1, 1, self.hiddem_dim_lstm), dtype=torch.float32, device=device)
+    def get_initial_state(self, device, batch_size=1):
+        return torch.zeros((1, batch_size, self.hiddem_dim_lstm), dtype=torch.float32, device=device), \
+               torch.zeros((1, batch_size, self.hiddem_dim_lstm), dtype=torch.float32, device=device)
 
     def forward(self, observations, agent_state):
-        obs = observations.unsqueeze(0)
-        obs1, agent_state = self.lstm(obs, agent_state)
-        return obs1.squeeze(0), agent_state
+        obs1, agent_state = self.lstm(observations, agent_state)
+        return obs1, agent_state
 
 
 class MLPReinforceAgent(nn.Module):
@@ -50,10 +50,10 @@ class MLPReinforceAgent(nn.Module):
     def get_initial_state(self):
         return ()
 
-    def forward(self, observations, actions, agent_state):
+    def forward(self, observations, actions, _):
         observations = self.fc_2(F.relu(self.fc_1(observations)))
-        scores = actions @ observations.squeeze()
-        return scores, agent_state
+        scores = torch.matmul(actions, observations.unsqueeze(-1))
+        return scores.squeeze(), _, _
 
 
 class LSTMReinforceAgent(nn.Module):
@@ -74,13 +74,13 @@ class LSTMReinforceAgent(nn.Module):
     def weight_init(self):
         self.apply(init_weights)
 
-    def get_initial_state(self, device):
-        return self.lstm_layer.get_initial_state(device)
+    def get_initial_state(self, device, batch_size=1):
+        return self.lstm_layer.get_initial_state(device, batch_size)
 
     def forward(self, observations, actions, agent_state):
         obs, agent_state = self.lstm_layer(observations, agent_state)
-        obs1, agent_state = self.head(obs, actions, agent_state)
-        return obs1, agent_state
+        obs1, _, agent_state = self.head(obs, actions, agent_state)
+        return obs1, None, agent_state
 
 
 class LSTMActorCriticAgent(nn.Module):
@@ -103,11 +103,11 @@ class LSTMActorCriticAgent(nn.Module):
     def weight_init(self):
         self.apply(init_weights)
 
-    def get_initial_state(self, device):
-        return self.lstm_layer.get_initial_state(device)
+    def get_initial_state(self, device, batch_size=1):
+        return self.lstm_layer.get_initial_state(device, batch_size)
 
     def forward(self, observations, actions, agent_state):
         obs1, agent_state = self.lstm_layer(observations, agent_state)
-        obs, agent_state = self.actor_head(obs1, actions, agent_state)
+        obs, _, agent_state = self.actor_head(obs1, actions, agent_state)
         values = self.critic_head(obs1)
-        return obs, values.squeeze(0), agent_state
+        return obs, values.squeeze(), agent_state

@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 
 import argparse
-from prepare_datasets import get_questions_msmarco, get_questions_sem_eval
+from utils.dataset_utils import get_questions_msmarco, get_questions_sem_eval
 from utils import graph_utils
 from embeddings import GloveEmbeddingProvider
 from knowledge_graph import KnowledgeGraph
-from utils.utils_agent import bfs, compute_metrics
+from utils.agent_utils import bfs, compute_metrics
 
 
 def parse_args():
@@ -22,11 +22,7 @@ def parse_args():
 def main(args):
     triples = graph_utils.get_causenet_triples(args.knowledge_graph, include_source=True)
     provider = GloveEmbeddingProvider(args.embeddings)
-    kg = KnowledgeGraph(embedding_provider=provider,
-                        triples=triples,
-                        entity_embedding_path=None,
-                        relation_embedding_path=None,
-                        use_inverse=True)
+    kg = KnowledgeGraph(embedding_provider=provider, triples=triples, use_inverse=True)
 
     if args.dataset == 'msmarco':
         valid = get_questions_msmarco(kg, args.test_file, True)
@@ -50,8 +46,6 @@ def main(args):
         else:
             preds.append(0)
 
-    # with open("bfs.txt", "w") as f:
-    #    f.write(str(preds))
     metrics = compute_metrics(labels, preds)
     metrics['nodes'] = c / len(valid)
     print(metrics)

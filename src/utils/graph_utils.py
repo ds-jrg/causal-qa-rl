@@ -1,7 +1,6 @@
 import bz2
 import json
 import gzip
-import nltk
 import unicodedata
 
 from bidict import bidict
@@ -12,15 +11,12 @@ from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
 from typing import List, Tuple, Dict
 
-
-nltk.download('stopwords')
-nltk.download('punkt')
 STOP_WORDS = set(stopwords.words('english'))
-
 
 #########################
 # Causenet
 #########################
+
 
 def get_causenet_triples(path: str, include_source: bool = False) -> List[Tuple[str, str]]:
     if 'sample' in path:
@@ -202,6 +198,7 @@ def get_adjacency_list(triples: List[Tuple[str, str]],
 
     for key in entity_index:
         graph[key].insert(0, len(entity_index)-1)
+        graph_sources_full[(key, len(entity_index)-1)] = 'stop'
         if isinstance(triples[0][2], str):
             graph_sources[(key, len(entity_index)-1)] = 'stop'
         else:
