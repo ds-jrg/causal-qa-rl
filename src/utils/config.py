@@ -10,9 +10,9 @@ def parse_args():
     parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     parser.add_argument("--name", type=str, default='msmarco', help='Name for the model/run.')
     parser.add_argument('--train_datasets', nargs='+',
-                        default=['datasets/msmarco_train_valid.json', 'datasets/sem_train_valid.csv'])
+                        default=['datasets/msmarco_train_valid.json'])
     parser.add_argument('--test_datasets', nargs='+',
-                        default=['datasets/msmarco_test.json', 'datasets/sem_test.csv'])
+                        default=['datasets/msmarco_test.json'])
 
     parser.add_argument("--knowledge_graph", type=str, default='data/causenet-precision.jsonl.bz2')
     parser.add_argument("--embeddings", type=str, default='glove', help='Which embeddings to use glove or lm.')
