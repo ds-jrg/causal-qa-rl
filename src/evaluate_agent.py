@@ -80,6 +80,7 @@ def main(args):
                                    hidden_dim_lstm=args.hidden_dim_lstm)
 
     agent.load_state_dict(torch.load(args.model, map_location=DEVICE))
+    agent.to(DEVICE)
 
     if args.dataset == 'msmarco':
         valid = get_questions_msmarco(kg, args.test_file, True)

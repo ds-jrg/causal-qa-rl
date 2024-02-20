@@ -6,14 +6,14 @@ Paper: https://arxiv.org/abs/2311.02760
 
 Clone the repository:
 ```
-git clone https://github.com/CausalRLQA/CausalRLQA
+git clone https://github.com/ds-jrg/causal-qa-rl.git
 ```
 
-Optionally create a python venv or conda environment. Requires `Python >= 3.9`.
+Optionally create a python venv or conda environment. Requires `Python >= 3.10`.
 
 With `Anaconda3`:
 ```
-conda create --name causalqa python=3.9
+conda create --name causalqa python=3.10
 conda activate causalqa
 ```
 

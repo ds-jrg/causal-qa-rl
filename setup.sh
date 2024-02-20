@@ -8,9 +8,9 @@ wget https://groups.uni-paderborn.de/wdqa/causenet/causality-graphs/causenet-pre
 wget https://groups.uni-paderborn.de/wdqa/causenet/causality-graphs/causenet-sample.json
 mv glove.6B.zip causenet-precision.jsonl.bz2 causenet-sample.json data/
 
-wget https://www.dropbox.com/s/gdd3qllyzs0mw32/models.tar.gz
-tar xf models.tar.gz
+wget https://www.dropbox.com/scl/fi/y1cn9khbtjj0x5eme237p/models.tar.gz?rlkey=dh35zjtq8g7rskz05e42uopk2&e=1&dl=0
+tar xf models.tar.gz?rlkey=dh35zjtq8g7rskz05e42uopk2
 
 cd src
-python setup.py develop
+pip install .
 python -m nltk.downloader stopwords punkt wordnet omw-1.4

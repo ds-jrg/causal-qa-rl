@@ -6,7 +6,6 @@ setuptools.setup(
     description="Causal Question Answering on Knowledge Graphs with Reinforcement Learning.",
     packages=setuptools.find_packages(),
     install_requires=[
-       'aiohttp>=3.8.3',
        'bidict>=0.22.0',
        'networkx>=2.8.7',
        'pandas>=1.5.2',

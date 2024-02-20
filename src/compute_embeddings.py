@@ -14,11 +14,11 @@ from tqdm import tqdm
 DEVICE = torch.device('cuda:0') if torch.cuda.is_available() else torch.device('cpu')
 
 
-def run_sentence_transformer(input_texts, model_name='intfloat/e5-large-v2',
+def run_sentence_transformer(input_texts, model_name='intfloat/e5-large-v2', batch_size=128,
                              normalize_embeddings=True, trust_remote_code=False):
     model = SentenceTransformer(model_name, trust_remote_code=trust_remote_code)
     print(model.max_seq_length)
-    embeddings = model.encode(input_texts, normalize_embeddings=normalize_embeddings, show_progress_bar=True)
+    embeddings = model.encode(input_texts, normalize_embeddings=normalize_embeddings, show_progress_bar=True, batch_size=batch_size)
     print(embeddings.shape)
     return embeddings
 
